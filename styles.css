@@ -13,6 +13,7 @@
     text-decoration: none;
     transition: all 0.2s linear;
 }
+
 html{
     font-size : 72%;
     overflow-x:hidden ;
@@ -21,11 +22,11 @@ html{
 } 
 section{
     padding: 1.5rem 5% ;
-    margin-top: 2rem;
+    margin-top: 3.5rem;
 }
 .heading{
     margin-bottom: 2rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
     color:rgb(255, 184, 7);
 }
@@ -39,12 +40,12 @@ section{
 }
 
 .btn{
-    font-size: 2.4rem;
+    font-size: 2rem;
     background: orange;
     color: aliceblue;
-    padding: .7rem 3rem ;
+    padding: .7rem 2.5rem ;
     text-align: center;
-    width: 35%;
+    width: 30%;
     cursor: pointer;
 }    
 .btn:hover{
@@ -58,29 +59,30 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 7%;
+    padding: 1rem 5%;
+    
     
 }
  header .A{
-    font-size: 2.9rem;
+    font-size: 2rem;
     font-weight: bolder;
     color: aliceblue;
     text-transform: uppercase;
  }
  header .A span{ 
     color: orange;
-    font-size: 4rem;
+    font-size: 3rem;
  }
  header .navbar a{
     color: aliceblue;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 10px;
  }
  header .navbar a:hover{
     color: orange;
  }
  header .icons i{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: aliceblue;
     cursor: pointer;
     margin-right: 2rem;
@@ -91,7 +93,7 @@ header{
  header .search-bar-container{
     position: absolute;
     top: 100%; left: 0; right: 0;
-    padding: 1.5rem 2rem;
+    padding: 1.2rem 2rem;
     background: #1512127a;
     display: flex;
     z-index: 1001;
@@ -106,13 +108,13 @@ header{
     width: 100%;
     color: #333;
     text-transform: none;
-    font-size: 2.2rem;
+    font-size: 2rem;
     border-radius: .5rem;
  }
  header .search-bar-container label{
     color: aliceblue;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-left: 1rem;
  }
  header .search-bar-container label:hover{
@@ -132,16 +134,20 @@ header{
 .login-form-container.active{
     top: 0;
 }
+.login-form-container #loginForm{
+    align-content: center;
+}
 .login-form-container form{
-    margin: 3rem;
-    padding:2rem 2rem 2rem 2rem;
+    margin: 2rem;
+    padding:1.5rem 1.5rem 1.5rem 1.5rem;
     border-radius: .5rem;
-    background: white;
-    width: 50rem;
+    background: rgba(255, 255, 255, 0.8);
+    width: 40rem;
+    min-height: 30rem;
 }
 .login-form-container form h3{
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     padding: 1.4rem;
     color: #444;
     text-transform: uppercase;
@@ -163,28 +169,32 @@ header{
 .login-form-container form label{
     font-size: 1.2rem;
 }
-.login-form-container form .btn{
-    font-size: 2.4rem;
+.login-form-container form #loginButton{
+    font-size: 2rem;
     background: orange;
     color: aliceblue;
     padding: .6rem 3rem ;
     text-align: center;
-    display: block;
+    display:inline-block;
     width: 100%;
     cursor: pointer;
+    border-radius: 1rem;
 }
 .login-form-container form p{
     margin-top: .8rem;
     font-size: 1.1rem;
     color: #666;
 }
+.login-form-container form p a{
+    color: black;
+}
 .login-form-container form p a:hover{
     color: orange;
 }
 .login-form-container #form-close{
     position: absolute;
-    top: 2rem; right: 3rem;
-    font-size: 5rem;
+    top: 1.5rem; right: 2rem;
+    font-size: 3rem;
     cursor: pointer;
     color:#fff;
 }
@@ -198,7 +208,7 @@ header{
     display:none;
 }   
 .home{
-    min-height: 110vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,9 +243,9 @@ header{
     object-fit: cover;
 }
 .book .row{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
 
 } 
@@ -250,40 +260,47 @@ header{
 .book .row .booking{
     display: flex;
     flex-direction: column;
-    width: 58rem;
+    width: 50rem;
     box-shadow: 0 1.5rem 2rem rgba(0,0,0,.3);
     border-radius: .5rem;
 }
 .book .row .booking .inp{
-    padding: 2rem 2rem ;
+    padding: 1rem 1rem ;
+    gap: .5rem;
 }
 .book .row .booking .inp h4{
-    font-size: 2.8rem;
+    font-size: 2.3rem;
 }
 .book .row form .inp input{
     width: 100%;
-    padding: 1.2rem;
+    padding: .8rem;
     border: .1rem solid rgba(0,0,0,.5);
     border-radius: .5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .book .row form .inp input.btn{
-    font-size: 2.6rem;
+    font-size: 2.2rem;
+}
+.packages{
+    margin-top: 5rem;
 }
 .packages .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
 }
 .packages .box-container .box{
     flex: 1 1 30rem;
     border-radius: .5rem;
     box-shadow: 0 1rem 1.5rem rgba(0,0,0,.3);
     overflow: hidden;
+    padding: 1.5rem;
+    max-width: 410px;
+    max-height: 575px;
 }
 .packages .box-container .box img{
     width: 100%;
-    height: 30rem;
+    height: 25rem;
     object-fit: cover;
 }
 .packages .box-container .box .content{
@@ -300,6 +317,9 @@ header{
 .packages .box-container .box .content h3 i{
     color: orange;
     font-size: 3rem;
+}
+.packages .box-container .box .content .btn{
+    border-radius: 1rem;
 }
 .packages .box-container .box .content p{
     font-size: 1.3rem;
@@ -324,6 +344,9 @@ header{
 .packages .box-container .box .content .btn:hover{
     background-color: rgba(255, 166, 0, 0.501);
 }
+.services{
+    margin-top: 5rem;
+}
 .services .box-container {
     display: flex;
     flex-wrap: wrap;
@@ -333,30 +356,35 @@ header{
     flex: 1 1 25rem;
     border-radius: .7rem;
     box-shadow: 0 1rem 1.5rem #ff9a0263;
-    padding: 1.5rem;
+    padding: 1.4rem;
     text-align: center;
+    max-height: 300px;
 }
 .services .box-container .box:hover{
     background: rgba(213, 143, 12, 0.142);
 }
 .services .box-container .box i{
     color: orange;
-    font-size:5rem;
+    font-size:4rem;
     font-style: inherit;
     padding: 1rem;
 }
 .services .box-container .box h4{
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     color: #444;
 }
 .services .box-container .box p{
     font-size: 1.5rem;
     color: #777;
 }
+
+.gallery{
+    margin-top: 5rem;
+}
 .gallery .box-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 .gallery .box-container .box{
     flex: 1 1 22rem;
@@ -365,6 +393,8 @@ header{
     text-align: center;
     overflow: hidden;
     position: relative;
+    min-height: 370px;
+    
 }
 .gallery .box-container .box img{
     width: 100%;
@@ -378,14 +408,20 @@ header{
 .gallery .box-container .box p{
     font-size: 1.2rem;
     color: #777;
+    margin-bottom: 1rem;
 }
 .gallery .box-container .box a.btn{
     width: 20%;
     padding: .4rem .9rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+
 }
 .gallery .box-container .box a.btn:hover{
     background-color: #ff9a0263;
+}
+.review{
+    margin-top: 5rem;
 }
 .swiper {
     width: 100%;
@@ -454,23 +490,25 @@ header{
 
 }
 .contact .row form .input input, .contact .row form textarea{
-    width: 47%;
+    width: 45%;
     margin: 1rem 0;
-    padding: 1.5rem;
+    padding: 1rem;
     font-size: 2rem;
-    color:#333;
-    background: #f4f4f464;
+    color:#33333300;
+    background: #f4f4f4;
     text-transform: none;
+    border-radius: 1rem;
 }
 .contact .row .form textarea{
     resize: none;
     width: 100%;
 }
 .contact .row .form .btn{
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
+    border-radius: 1rem;
 }
-.brand-container .swiper .swiper-wrapper
+/* .brand-container .swiper .swiper-wrapper
 {
     text-align:center;
 }
@@ -481,31 +519,87 @@ header{
     align-items: center;
     padding: 3.6rem;
     margin-left: 2rem;
-}
-.footer .box h2{
-    font-size: 1.7rem;
+} */
+.footer h2{
+    font-size: 2rem;
 }
 .footer .box p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #555;
+    max-width: 80%;
 }
 .footer .box a{
-    font-size: 1.6rem;
+    font-size: 4rem;
+    margin-left: .5rem;
+    color: orange;
+    border: .1rem solid orange;
+    border-radius: 10rem;
+
+
+}
+.footer .box1 a{
+    font-size: 1.8rem;
     margin-left: 1rem;
     color: orange;
 }
 .footer .box a:hover{
     color: #333;
 }
+.footer .box1 a:hover{
+    color: #333;
+}
+
+
+@media (max-width:970px){
+    
+    .book .row .image img{
+        width: 100%;
+        min-height: 621px;
+        object-fit: cover;
+        left: 0;
+        position: absolute;
+        opacity: .3;
+        z-index: -1;
+       
+    } 
+    .book .row .booking{
+        object-fit: cover;
+        z-index:100;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: #ffffffa4;
+        padding: 20px;
+        height: auto;
+    }
+    .contact .row .image {
+        width: 100%;
+        height: 62%;
+        object-fit: cover;
+        left: 0;
+        position: absolute;
+    }
+    .contact .row .form {
+
+        z-index:1;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: #ffffff5c;
+        padding: 40px;
+        height: 880px;
+    }
+    .contact .row .form .input ,.contact .row form textarea{
+        margin: 2rem;
+    }
+ }
 
 
 
 
 
 
-
-
-
+/* 
 
 
 
@@ -601,4 +695,4 @@ header{
     
     }
  }
- 
+  */

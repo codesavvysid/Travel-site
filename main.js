@@ -32,3 +32,21 @@ const swiper = new Swiper('.swiper',{
         disableOnInteraction: false,
     },
 });
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('loginButton').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        loginForm.classList.remove('active');
+        // You can customize the SweetAlert2 alert as needed
+        Swal.fire({
+            title: 'Login Successful!',
+            icon: 'success',
+            confirmButtonText: 'OK'
+        }).then(() => {
+
+            // Close the login form
+            document.querySelector('.login-form-container').style.display = 'none';
+        });
+    });
+});
+
