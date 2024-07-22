@@ -124,7 +124,7 @@ header{
     position: fixed;
     top: -150%; left: 0;
     width: 100%;
-   min-height: 90vh;
+   min-height: 100vh;
     display: flex;
     z-index: 10000;
     background: rgba(0,0,0,.5);
@@ -849,7 +849,7 @@ header{
         justify-content: center;
     }
     header{
-        position: fixed;
+        position: relative;
         top: 0; left: 0;right:0;
         background: #1512127a;
         z-index: 1000;
@@ -906,7 +906,6 @@ header{
         left: 0;
         margin-right: 60%;
         background: #4140405e;
-        padding: 1rem 2rem;
         border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
