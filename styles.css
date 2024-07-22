@@ -202,7 +202,7 @@ header{
     color: #fff;
     border: 0.5px solid #fff;
     border-radius: .5rem;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
     padding: .5rem 1.1rem;
     display:none;
@@ -582,6 +582,45 @@ header{
     .packages .box-container .box {
         flex: 24.5rem;
     }
+    .packages .box-container .box .content h3{
+        font-size: 2rem;
+        margin-left: .2rem;
+    }
+    .packages .box-container .box .content h3 span{
+        font-size: 1rem;
+        color: #555;
+    }
+    .packages .box-container .box .content h3 i{
+        color: orange;
+        font-size: 2rem;
+    }
+    .packages .box-container .box .content .btn{
+        border-radius: .5rem;
+        font-size: 99%;
+    }
+    .packages .box-container .box .content p{
+        font-size: 1rem;
+        margin-left: .4rem;
+        color: #333;
+    } 
+    .packages .box-container .box .content .stars i{
+        font-size:1rem;;
+        color:orange;
+    }
+    .packages .box-container .box .content .price{
+        font-size: 1.5rem;
+        margin: 1rem 1rem;
+        margin-top: -.15rem;
+        padding: .5rem;
+    }
+    .packages .box-container .box .content .price span{
+        font-size: 1rem;
+        color:#777;
+        text-decoration: line-through;
+    }
+    .packages .box-container .box .content .btn:hover{
+        background-color: rgba(255, 166, 0, 0.501);
+    }
 }
 
 
@@ -600,6 +639,7 @@ header{
     .packages .box-container .box {
         flex: 20.5rem;
     }
+  
 }
 
 
@@ -619,6 +659,38 @@ header{
 
 
 @media (max-width: 970px) {
+    .packages .box-container .box {
+        max-height:500px;
+    }
+    .packages .box-container .box img {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+    .packages .box-container .box .content h3{
+        font-size: 1.7rem;
+        margin-left: .1rem;
+    }
+    .packages .box-container .box .content p{
+        font-size: .9rem;
+        margin-left: .4rem;
+        color: #333;
+    } 
+    .packages .box-container .box .content .stars i{
+        font-size:.8rem;;
+        color:orange;
+    }
+    .packages .box-container .box .content .price{
+        font-size: 1.2rem;
+        margin: .5rem .5rem;
+        margin-top: -.15rem;
+        padding: .5rem;
+    }
+    .packages .box-container .box .content .price span{
+        font-size: .8rem;
+        color:#777;
+        text-decoration: line-through;
+    }
     .book .row .image img {
         width: 100%;
         max-height: 621px;
@@ -683,12 +755,146 @@ header{
 
 
 
+@media(max-width:870px)
+{
+    
+    header .A{
+        font-size: 1.4rem;
+        font-weight: bolder;
+        color: aliceblue;
+        text-transform: uppercase;
+     }
+     header .A span{ 
+        color: orange;
+        font-size: 2rem;
+     }
+     header .navbar a{
+        color: aliceblue;
+        font-size: 1.1rem;
+        margin: 5px;
+     }
+     header .navbar a:hover{
+        color: orange;
+     }
+     header .icons i{
+        font-size: 1rem;
+        color: aliceblue;
+        cursor: pointer;
+        margin-right: 1.5rem;
+     }
+     header .icons i:hover{
+        color: orange;
+     }
+     .home .content h3 {
+        text-align: center;
+        font-size: 3.2rem;
+        color: aliceblue;
+        text-transform: uppercase;
+    }
+    .home .content p {
+        text-align: center;
+        font-size: 2rem;
+        color: aliceblue;
+        padding: 1.5rem;
+    }
+    .home .content a.btn {
+        border-radius: .5rem;
+        padding: .5rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    .book .row .booking{
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+        box-shadow: 0 1.5rem 2rem rgba(0,0,0,.3);
+        border-radius: .5rem;
+    }
+    .book .row .booking .inp{
+        padding: 1rem 1rem ;
+        gap: .3rem;
+    }
+    .book .row .booking .inp h4{
+        font-size: 2rem;
+    }
+    .book .row form .inp input{
+        width: 100%;
+        padding: .8rem;
+        border: .1rem solid rgba(0,0,0,.5);
+        border-radius: .5rem;
+        font-size: 1rem;
+    }
+    .book .row form .inp input.btn{
+        font-size: 2rem;
+    }
+    .book .row .image img {
+        width: 100%;
+        max-height: 580px;
+        object-fit: cover;
+        left: 0;
+        position: absolute;
+        opacity: 0.4;
+        z-index: -1;
+    }
+}
+
+
+
+
+
 
 
 
 @media (max-width: 565px) {
-    .packages .box-container .box {}
-
+    .packages .box-container {
+        justify-content: center;
+    }
+    header{
+        position: fixed;
+        top: 0; left: 0;right:0;
+        background: #1512127a;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem 1%;
+        
+        
+    }
+    header .A{
+        font-size: 2rem;
+        font-weight: bolder;
+        color: aliceblue;
+        text-transform: uppercase;
+     }
+     header .A span{ 
+        color: orange;
+        font-size: 3rem;
+     }
+     header .icons i{
+        font-size: 1.3rem;
+        color: aliceblue;
+        cursor: pointer;
+        margin-right: 1.5rem;
+     }
+    .book .row .booking{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        box-shadow: 0 1.5rem 2rem rgba(0,0,0,.3);
+        border-radius: .5rem;
+    }
+    .home .content h3 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: aliceblue;
+        text-transform: uppercase;
+    }
+    .home .content p {
+        text-align: center;
+        font-size: 1.5rem;
+        color: aliceblue;
+        padding: 1rem;
+    }
     #menu-bar {
         display: initial;
     }
@@ -699,7 +905,7 @@ header{
         right: 0;
         left: 0;
         margin-right: 60%;
-        background: #333;
+        background: #4140405e;
         padding: 1rem 2rem;
         border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -713,13 +919,243 @@ header{
         display: block;
         padding: 1rem;
         border-radius: 0.5rem;
-        background: #111;
+        background: #111111af;
     }
+    .heading{
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+        color:rgb(255, 184, 7);
+    }
+    .heading span{
+        background: rgba(251, 131, 3, 0.2);
+        padding: .1rem 1rem;
+        border-radius: .4rem;
+    }
+    .footer h2{
+        font-size: 1.8rem;
+    }
+    .footer .box p{
+        font-size: 1.2rem;
+        color: #555;
+        max-width: 80%;
+    }
+    .footer .box a{
+        font-size: 2rem;
+        margin-left: .5rem;
+        color: orange;
+        border: .1rem solid orange;
+        border-radius: 10rem;
+    
+    
+    }
+    .footer .box1 a{
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        color: orange;
+    }
+    .contact .row .form {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.71);
+        max-height: 580px;
+    }
+
+    .contact .row .form .input,
+    .contact .row form textarea {
+        margin: 1rem;
+        color: #333;
+        background: rgba(244, 244, 244, 0.44);
+    }
+    .contact .row .form{
+        flex: 1 1 30rem;
+        padding: 1.5rem;
+        box-shadow: 0 1rem 2rem #675a5a65;
+        border-radius: .5rem; 
+        flex-direction: column;
+    }
+   
+    .contact .row form .input input, .contact .row form textarea{
+        width: 40%;
+        margin: 1rem 0;
+        padding: 1rem;
+        font-size: 1.5rem;
+        text-transform: none;
+        border-radius: 1rem;
+    }
+    .contact .row .form textarea{
+        resize: none;
+        width: 100%;
+    }
+    .contact .row .form .btn{
+        margin-top: 1rem;
+        text-align: center;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+    }
+    .contact .row .image {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        left: 0;
+        position: absolute;
+        opacity: 1;
+    }
+
 }
 
 
 
+@media(max-width:424px)
+{
+    
+    #menu-bar{
+        color: #fff;
+        border: 0.5px solid #fff;
+        border-radius: .5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: .5rem 1rem;
+        
+    }   
+    
+    
+    .contact .row .image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        left: 0;
+        position: absolute;
+        opacity: 1;
+    }
 
+    .contact .row form .input input, .contact .row form textarea{
+        width: 40%;
+        margin: 1rem 0;
+        padding: 1rem;
+        font-size: 1rem;
+        text-transform: none;
+        border-radius: 1rem;
+    }
+    .heading{
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        text-align: center;
+        color:rgb(255, 184, 7);
+    }
+    .heading span{
+        background: rgba(251, 131, 3, 0.2);
+        padding: .05rem .6rem;
+        border-radius: .4rem;
+    }
+    .book .row .booking{
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        box-shadow: 0 1.5rem 2rem rgba(0,0,0,.3);
+        border-radius: .5rem;
+    }
+    .footer h2{
+        font-size: 1.5rem;
+    }
+    .footer .box p{
+        font-size: 1rem;
+        color: #555;
+        max-width: 80%;
+    }
+    .footer .box a{
+        font-size: 1.5rem;
+        margin-left: .3rem;
+        color: orange;
+        border: .1rem solid orange;
+        border-radius: 10rem;
+    
+    
+    }
+    .footer .box1 a{
+        font-size: 1rem;
+        margin-left: .5rem;
+        color: orange;
+    }
+    .login-form-container form{
+        margin: 1.5rem;
+        padding:1rem 1rem 1rem 1rem;
+        border-radius: .5rem;
+        background: rgba(255, 255, 255, 0.8);
+        width: 30rem;
+        min-height: 20rem;
+    }
+    
+  
+    .login-form-container form h3{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem;
+        color: #444;
+        text-transform: uppercase;
+    }
+    .login-form-container form h3 span{
+        color: orange;
+    }
+    .login-form-container form .email{
+        text-align: center;
+        font-size: 1rem;
+        border: .1px solid #333;
+        width:100%;
+        padding: .4rem;
+        margin: .3rem;
+    }
+    .login-form-container form #remember{
+        margin: 1rem 0;
+    }
+    .login-form-container form label{
+        font-size: 1rem;
+    }
+    .login-form-container form #loginButton{
+        font-size: 1.5rem;
+        background: orange;
+        color: aliceblue;
+        padding: .6rem 3rem ;
+        text-align: center;
+        display:inline-block;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 1rem;
+    }
+    .login-form-container form p{
+        margin-top: .8rem;
+        font-size: 1rem;
+        color: #666;
+    }
+    .login-form-container form p a{
+        color: black;
+    }
+    .login-form-container form p a:hover{
+        color: orange;
+    }
+    .login-form-container #form-close{
+        position: absolute;
+        top: 1.5rem; right: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color:#fff;
+    }
+    header .search-bar-container #search-bar{
+        width: 100%;
+        color: #333;
+        text-transform: none;
+        font-size: 1rem;
+        border-radius: .5rem;
+     }
+     header .search-bar-container label{
+        color: aliceblue;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-left: .5rem;
+     }
+}
 
 
 
