@@ -124,7 +124,7 @@ header{
     position: fixed;
     top: -150%; left: 0;
     width: 100%;
-   min-height: 100vh;
+   min-height: 90vh;
     display: flex;
     z-index: 10000;
     background: rgba(0,0,0,.5);
