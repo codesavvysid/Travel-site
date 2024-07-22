@@ -122,7 +122,7 @@ header{
  }
 .login-form-container{
     position: fixed;
-    top: -100%; left: 0;
+    top: -150%; left: 0;
     width: 100%;
    min-height: 100vh;
     display: flex;
